@@ -1,7 +1,0 @@
-spring:
-  application:
-    name: kafka-streams-demo
-  kafka:
-    streams:
-      properties:
-        num.stream.threads: 2

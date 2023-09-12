@@ -1,1 +1,3 @@
 rootProject.name = 'kafka-streams-demo'
+include 'spring-admin-server'
+include 'kafka-streams'

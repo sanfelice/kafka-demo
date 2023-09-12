@@ -1,0 +1,38 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: kafka-streams-demo
+  security:
+    user:
+      name: client
+      password: client
+  kafka:
+    streams:
+      properties:
+        num.stream.threads: 2
+  boot:
+    admin:
+      #configs to connect to self register the admin server as a client
+      client:
+        url: http://localhost:8080
+        username: admin
+        password: admin
+        #configs to give secured server info
+        instance:
+          metadata:
+            user:
+              name: client
+              password: client
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
+    loggers:
+      enabled: true
+  security:
+    enabled: false
