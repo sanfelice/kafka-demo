@@ -1,14 +1,12 @@
 plugins {
     id 'java'
-    id 'org.springframework.boot' version '3.1.2'
-    id 'io.spring.dependency-management' version '1.1.2'
+    id 'org.springframework.boot' version '3.2.3'
+    id 'io.spring.dependency-management' version '1.1.4'
 }
 
-group = 'com.sanfelice'
-version = '0.0.1-SNAPSHOT'
 
 java {
-    sourceCompatibility = '20'
+    sourceCompatibility = '21'
 }
 
 configurations {
@@ -22,7 +20,7 @@ repositories {
 }
 
 ext {
-    set('springBootAdminVersion', "3.1.5")
+    set('springBootAdminVersion', "3.2.2")
 }
 
 dependencies {
